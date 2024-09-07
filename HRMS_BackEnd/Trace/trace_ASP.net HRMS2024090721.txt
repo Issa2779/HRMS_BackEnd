@@ -1,0 +1,858 @@
+2024-09-07 21:21:46.827 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-07 21:21:47.512 +03:00 [DBG] Hosting starting
+2024-09-07 21:21:48.131 +03:00 [INF] User profile is available. Using 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 21:21:48.147 +03:00 [DBG] Reading data from file 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys\key-609a1826-83c1-42ad-8d25-65a03b3f0c22.xml'.
+2024-09-07 21:21:48.158 +03:00 [DBG] Reading data from file 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys\key-c3a606a7-4f38-40da-8a01-cd847a3cac44.xml'.
+2024-09-07 21:21:48.165 +03:00 [DBG] Found key {609a1826-83c1-42ad-8d25-65a03b3f0c22}.
+2024-09-07 21:21:48.172 +03:00 [DBG] Found key {c3a606a7-4f38-40da-8a01-cd847a3cac44}.
+2024-09-07 21:21:48.182 +03:00 [DBG] Considering key {c3a606a7-4f38-40da-8a01-cd847a3cac44} with expiration date 2024-11-30 18:49:16Z as default key.
+2024-09-07 21:21:48.190 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-07 21:21:48.202 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-09-07 21:21:48.207 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-07 21:21:48.215 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-09-07 21:21:48.236 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-09-07 21:21:48.246 +03:00 [DBG] Using key {c3a606a7-4f38-40da-8a01-cd847a3cac44} as the default key.
+2024-09-07 21:21:48.247 +03:00 [DBG] Key ring with default key {c3a606a7-4f38-40da-8a01-cd847a3cac44} was loaded during application startup.
+2024-09-07 21:21:48.783 +03:00 [DBG] Connection id "0HN6FD7O2S3D2" accepted.
+2024-09-07 21:21:48.785 +03:00 [DBG] Connection id "0HN6FD7O2S3D2" started.
+2024-09-07 21:21:48.801 +03:00 [INF] Now listening on: https://localhost:7261
+2024-09-07 21:21:48.801 +03:00 [INF] Now listening on: http://localhost:5167
+2024-09-07 21:21:48.802 +03:00 [DBG] Loaded hosting startup assembly HRMS_BackEnd
+2024-09-07 21:21:48.802 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-09-07 21:21:48.802 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-09-07 21:21:48.802 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-09-07 21:21:48.822 +03:00 [DBG] Connection id "0HN6FD7O2S3D2" received FIN.
+2024-09-07 21:21:48.837 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-09-07 21:21:48.917 +03:00 [DBG] Connection id "0HN6FD7O2S3D2" stopped.
+2024-09-07 21:21:48.922 +03:00 [DBG] Connection id "0HN6FD7O2S3D2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-07 21:21:49.103 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 21:21:49.103 +03:00 [INF] Hosting environment: Development
+2024-09-07 21:21:49.103 +03:00 [INF] Content root path: C:\Users\Issa Alshaban\Desktop\HRMS Project\BackEnd\HRMS_BackEnd\HRMS_BackEnd
+2024-09-07 21:21:49.103 +03:00 [DBG] Hosting started
+2024-09-07 21:21:49.351 +03:00 [DBG] Connection id "0HN6FD7O2S3D3" accepted.
+2024-09-07 21:21:49.392 +03:00 [DBG] Connection id "0HN6FD7O2S3D3" started.
+2024-09-07 21:21:49.549 +03:00 [DBG] Connection 0HN6FD7O2S3D3 established using the following protocol: "Tls12"
+2024-09-07 21:21:49.676 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/index.html - null null
+2024-09-07 21:21:49.903 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-09-07 21:21:49.952 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-09-07 21:21:49.952 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:21:50.122 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-09-07 21:21:50.125 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-09-07 21:21:50.329 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-09-07 21:21:50.330 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-09-07 21:21:50.352 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 21:21:50.353 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/index.html - 200 null text/html;charset=utf-8 688.4487ms
+2024-09-07 21:21:50.380 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/swagger-ui.css - null null
+2024-09-07 21:21:50.380 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2024-09-07 21:21:50.398 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:21:50.405 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/_vs/browserLink - null null
+2024-09-07 21:21:50.428 +03:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2024-09-07 21:21:50.429 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-07 21:21:50.430 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/swagger-ui.css - 499 143943 text/css 50.4282ms
+2024-09-07 21:21:50.435 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 83.2844ms
+2024-09-07 21:21:50.532 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/_vs/browserLink - 200 null text/javascript; charset=UTF-8 127.2346ms
+2024-09-07 21:21:50.548 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/favicon-16x16.png - null null
+2024-09-07 21:21:50.550 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-16x16.png'
+2024-09-07 21:21:50.550 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:21:50.558 +03:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2024-09-07 21:21:50.560 +03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2024-09-07 21:21:50.560 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/favicon-16x16.png - 499 665 image/png 12.2665ms
+2024-09-07 21:21:50.647 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/v1/swagger.json - null null
+2024-09-07 21:21:50.648 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-09-07 21:21:50.648 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:21:51.274 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 626.9042ms
+2024-09-07 21:24:32.386 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7261/api/v1.0/Authenticate - application/json 241
+2024-09-07 21:24:32.395 +03:00 [DBG] 1 candidate(s) found for the request path '/api/v1.0/Authenticate'
+2024-09-07 21:24:32.401 +03:00 [DBG] Endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)' with route pattern 'api/v{version:apiVersion}/Authenticate' is valid for the request path '/api/v1.0/Authenticate'
+2024-09-07 21:24:32.409 +03:00 [DBG] Request matched endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)'
+2024-09-07 21:24:32.411 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-09-07 21:24:32.492 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-09-07 21:24:32.495 +03:00 [INF] Executing endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)'
+2024-09-07 21:24:32.560 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO) on controller HRMS_BackEnd.Controllers.AuthenticateController (HRMS_BackEnd).
+2024-09-07 21:24:32.561 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-09-07 21:24:32.561 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-09-07 21:24:32.562 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-07 21:24:32.562 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-09-07 21:24:32.562 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-07 21:24:32.564 +03:00 [DBG] Executing controller factory for controller HRMS_BackEnd.Controllers.AuthenticateController (HRMS_BackEnd)
+2024-09-07 21:24:32.728 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-07 21:24:32.798 +03:00 [DBG] Executed controller factory for controller HRMS_BackEnd.Controllers.AuthenticateController (HRMS_BackEnd)
+2024-09-07 21:24:32.814 +03:00 [DBG] Attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO' ...
+2024-09-07 21:24:32.817 +03:00 [DBG] Attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO' using the name '' in request data ...
+2024-09-07 21:24:32.820 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-09-07 21:24:32.837 +03:00 [DBG] Connection id "0HN6FD7O2S3D3", Request id "0HN6FD7O2S3D3:0000001B": started reading request body.
+2024-09-07 21:24:32.837 +03:00 [DBG] Connection id "0HN6FD7O2S3D3", Request id "0HN6FD7O2S3D3:0000001B": done reading request body.
+2024-09-07 21:24:32.861 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'
+2024-09-07 21:24:32.862 +03:00 [DBG] Done attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'.
+2024-09-07 21:24:32.862 +03:00 [DBG] Done attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'.
+2024-09-07 21:24:32.862 +03:00 [DBG] Attempting to validate the bound parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO' ...
+2024-09-07 21:24:32.875 +03:00 [DBG] Done attempting to validate the bound parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'.
+2024-09-07 21:24:33.562 +03:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-09-07 21:24:33.562 +03:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-09-07 21:24:33.937 +03:00 [DBG] Entity Framework Core 8.0.8 initialized 'HrmsAuthDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-09-07 21:24:34.031 +03:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUser>()
+    .FirstOrDefault(u => u.NormalizedUserName == __normalizedUserName_0)'
+2024-09-07 21:24:34.356 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityUser.Id (string) Required PK AfterSave:Throw, 0], [Property: IdentityUser.AccessFailedCount (int) Required, 1], [Property: IdentityUser.ConcurrencyStamp (string) Concurrency, 2], [Property: IdentityUser.Email (string) MaxLength(256), 3], [Property: IdentityUser.EmailConfirmed (bool) Required, 4], [Property: IdentityUser.LockoutEnabled (bool) Required, 5], [Property: IdentityUser.LockoutEnd (DateTimeOffset?), 6], [Property: IdentityUser.NormalizedEmail (string) Index MaxLength(256), 7], [Property: IdentityUser.NormalizedUserName (string) Index MaxLength(256), 8], [Property: IdentityUser.PasswordHash (string), 9], [Property: IdentityUser.PhoneNumber (string), 10], [Property: IdentityUser.PhoneNumberConfirmed (bool) Required, 11], [Property: IdentityUser.SecurityStamp (string), 12], [Property: IdentityUser.TwoFactorEnabled (bool) Required, 13], [Property: IdentityUser.UserName (string) MaxLength(256), 14] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedUserName == @__normalizedUserName_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityUser>, 
+        HRMS_BackEnd.Database.Context.HrmsAuthDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-09-07 21:24:34.406 +03:00 [DBG] Creating DbConnection.
+2024-09-07 21:24:34.435 +03:00 [DBG] Created DbConnection. (25ms).
+2024-09-07 21:24:34.438 +03:00 [DBG] Opening connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:34.723 +03:00 [DBG] Opened connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:34.730 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-07 21:24:34.737 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2024-09-07 21:24:34.747 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (19ms).
+2024-09-07 21:24:34.757 +03:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-09-07 21:24:34.821 +03:00 [INF] Executed DbCommand (64ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-09-07 21:24:34.840 +03:00 [DBG] Closing data reader to 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:34.850 +03:00 [DBG] A data reader for 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 22ms reading results.
+2024-09-07 21:24:34.853 +03:00 [DBG] Closing connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:34.860 +03:00 [DBG] Closed connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' (5ms).
+2024-09-07 21:24:34.977 +03:00 [DBG] Context 'HrmsAuthDbContext' started tracking 'IdentityUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:24:34.983 +03:00 [DBG] SaveChanges starting for 'HrmsAuthDbContext'.
+2024-09-07 21:24:34.986 +03:00 [DBG] DetectChanges starting for 'HrmsAuthDbContext'.
+2024-09-07 21:24:35.006 +03:00 [DBG] DetectChanges completed for 'HrmsAuthDbContext'.
+2024-09-07 21:24:35.097 +03:00 [DBG] Opening connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.098 +03:00 [DBG] Opened connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.101 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-07 21:24:35.101 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:24:35.102 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:24:35.102 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-09-07 21:24:35.109 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-09-07 21:24:35.114 +03:00 [DBG] Closing data reader to 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.114 +03:00 [DBG] A data reader for 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 4ms reading results.
+2024-09-07 21:24:35.116 +03:00 [DBG] Closing connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.116 +03:00 [DBG] Closed connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-09-07 21:24:35.127 +03:00 [DBG] An entity of type 'IdentityUser' tracked by 'HrmsAuthDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:24:35.129 +03:00 [DBG] SaveChanges completed for 'HrmsAuthDbContext' with 1 entities written to the database.
+2024-09-07 21:24:35.142 +03:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUser>()
+    .SingleOrDefault(u => u.NormalizedEmail == __normalizedEmail_0)'
+2024-09-07 21:24:35.151 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityUser.Id (string) Required PK AfterSave:Throw, 0], [Property: IdentityUser.AccessFailedCount (int) Required, 1], [Property: IdentityUser.ConcurrencyStamp (string) Concurrency, 2], [Property: IdentityUser.Email (string) MaxLength(256), 3], [Property: IdentityUser.EmailConfirmed (bool) Required, 4], [Property: IdentityUser.LockoutEnabled (bool) Required, 5], [Property: IdentityUser.LockoutEnd (DateTimeOffset?), 6], [Property: IdentityUser.NormalizedEmail (string) Index MaxLength(256), 7], [Property: IdentityUser.NormalizedUserName (string) Index MaxLength(256), 8], [Property: IdentityUser.PasswordHash (string), 9], [Property: IdentityUser.PhoneNumber (string), 10], [Property: IdentityUser.PhoneNumberConfirmed (bool) Required, 11], [Property: IdentityUser.SecurityStamp (string), 12], [Property: IdentityUser.TwoFactorEnabled (bool) Required, 13], [Property: IdentityUser.UserName (string) MaxLength(256), 14] }
+            SELECT TOP(2) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedEmail == @__normalizedEmail_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityUser>, 
+        HRMS_BackEnd.Database.Context.HrmsAuthDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-09-07 21:24:35.153 +03:00 [DBG] Opening connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.155 +03:00 [DBG] Opened connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.155 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-07 21:24:35.155 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:24:35.155 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:24:35.155 +03:00 [DBG] Executing DbCommand [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-09-07 21:24:35.158 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2024-09-07 21:24:35.168 +03:00 [DBG] Closing data reader to 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.168 +03:00 [DBG] A data reader for 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 10ms reading results.
+2024-09-07 21:24:35.169 +03:00 [DBG] Closing connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.169 +03:00 [DBG] Closed connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-09-07 21:24:35.262 +03:00 [DBG] No relationship from 'Role' to 'RolesChangeRequest' has been configured by convention because there are multiple properties on one entity type - {'RolesChangeRequestNewRoles', 'RolesChangeRequestOldRoles'} that could be matched with the properties on the other entity type - {'NewRole', 'OldRole'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-09-07 21:24:35.277 +03:00 [DBG] No relationship from 'RolesChangeRequest' to 'Role' has been configured by convention because there are multiple properties on one entity type - {'NewRole', 'OldRole'} that could be matched with the properties on the other entity type - {'RolesChangeRequestNewRoles', 'RolesChangeRequestOldRoles'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-09-07 21:24:35.370 +03:00 [DBG] No relationship from 'RolesChangeRequest' to 'Role' has been configured by convention because there are multiple properties on one entity type - {'NewRole', 'OldRole'} that could be matched with the properties on the other entity type - {'RolesChangeRequestNewRoles', 'RolesChangeRequestOldRoles'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-09-07 21:24:35.370 +03:00 [DBG] No relationship from 'Role' to 'RolesChangeRequest' has been configured by convention because there are multiple properties on one entity type - {'RolesChangeRequestNewRoles', 'RolesChangeRequestOldRoles'} that could be matched with the properties on the other entity type - {'NewRole', 'OldRole'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-09-07 21:24:35.468 +03:00 [DBG] Entity Framework Core 8.0.8 initialized 'HrmsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-09-07 21:24:35.537 +03:00 [DBG] Context 'HrmsDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:24:35.537 +03:00 [DBG] 
+
+
+
+
+
+
+Issue here with Save Changes
+
+
+
+
+
+2024-09-07 21:24:35.538 +03:00 [DBG] SaveChanges starting for 'HrmsDbContext'.
+2024-09-07 21:24:35.538 +03:00 [DBG] DetectChanges starting for 'HrmsDbContext'.
+2024-09-07 21:24:35.562 +03:00 [DBG] DetectChanges completed for 'HrmsDbContext'.
+2024-09-07 21:24:35.577 +03:00 [DBG] Creating DbConnection.
+2024-09-07 21:24:35.577 +03:00 [DBG] Created DbConnection. (0ms).
+2024-09-07 21:24:35.577 +03:00 [DBG] Opening connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.587 +03:00 [DBG] Opened connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.588 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-07 21:24:35.588 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:24:35.589 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (1ms).
+2024-09-07 21:24:35.590 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 100), @p3='?' (Size = 50), @p4='?' (DbType = Date), @p5='?' (Size = 50), @p6='?' (Size = 20), @p7='?' (Size = 50), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeID], [DepartmentID], [Email], [FirstName], [HireDate], [LastName], [Phone], [Position], [RoleID])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2024-09-07 21:24:35.600 +03:00 [ERR] Failed executing DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (Size = 100), @p3='?' (Size = 50), @p4='?' (DbType = Date), @p5='?' (Size = 50), @p6='?' (Size = 20), @p7='?' (Size = 50), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([EmployeeID], [DepartmentID], [Email], [FirstName], [HireDate], [LastName], [Phone], [Position], [RoleID])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8);
+2024-09-07 21:24:35.603 +03:00 [DBG] Closing connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:35.603 +03:00 [DBG] Closed connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-09-07 21:24:35.615 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'HRMS_BackEnd.Database.Context.HrmsDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Employees' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:dd280f91-eebc-4d09-989a-f4988c5724b2
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Employees' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:dd280f91-eebc-4d09-989a-f4988c5724b2
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-09-07 21:24:35.893 +03:00 [INF] Executed action HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd) in 3324.4731ms
+2024-09-07 21:24:35.894 +03:00 [INF] Executed endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)'
+2024-09-07 21:24:36.069 +03:00 [ERR] Test Exception MW: An error occurred while saving the entity changes. See the inner exception for details.
+2024-09-07 21:24:36.084 +03:00 [DBG] 'HrmsDbContext' disposed.
+2024-09-07 21:24:36.091 +03:00 [DBG] Disposing connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:36.092 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-09-07 21:24:36.093 +03:00 [DBG] 'HrmsAuthDbContext' disposed.
+2024-09-07 21:24:36.094 +03:00 [DBG] Disposing connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:24:36.094 +03:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-09-07 21:24:36.094 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7261/api/v1.0/Authenticate - 500 null application/json; charset=utf-8 3708.7051ms
+2024-09-07 21:27:26.132 +03:00 [DBG] Connection id "0HN6FD7O2S3D3" received FIN.
+2024-09-07 21:27:26.135 +03:00 [DBG] Connection id "0HN6FD7O2S3D3" is closed. The last processed stream ID was 27.
+2024-09-07 21:27:26.136 +03:00 [DBG] Connection id "0HN6FD7O2S3D3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-07 21:27:26.136 +03:00 [DBG] The connection queue processing loop for 0HN6FD7O2S3D3 completed.
+2024-09-07 21:27:26.143 +03:00 [DBG] Connection id "0HN6FD7O2S3D3" stopped.
+2024-09-07 21:44:07.606 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-07 21:44:07.843 +03:00 [DBG] Hosting starting
+2024-09-07 21:44:07.910 +03:00 [INF] User profile is available. Using 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 21:44:07.924 +03:00 [DBG] Reading data from file 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys\key-609a1826-83c1-42ad-8d25-65a03b3f0c22.xml'.
+2024-09-07 21:44:07.936 +03:00 [DBG] Reading data from file 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys\key-c3a606a7-4f38-40da-8a01-cd847a3cac44.xml'.
+2024-09-07 21:44:07.943 +03:00 [DBG] Found key {609a1826-83c1-42ad-8d25-65a03b3f0c22}.
+2024-09-07 21:44:07.950 +03:00 [DBG] Found key {c3a606a7-4f38-40da-8a01-cd847a3cac44}.
+2024-09-07 21:44:07.963 +03:00 [DBG] Considering key {c3a606a7-4f38-40da-8a01-cd847a3cac44} with expiration date 2024-11-30 18:49:16Z as default key.
+2024-09-07 21:44:07.969 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-07 21:44:07.972 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-09-07 21:44:07.975 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-07 21:44:07.981 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-09-07 21:44:07.987 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-09-07 21:44:07.992 +03:00 [DBG] Using key {c3a606a7-4f38-40da-8a01-cd847a3cac44} as the default key.
+2024-09-07 21:44:07.994 +03:00 [DBG] Key ring with default key {c3a606a7-4f38-40da-8a01-cd847a3cac44} was loaded during application startup.
+2024-09-07 21:44:08.338 +03:00 [INF] Now listening on: https://localhost:7261
+2024-09-07 21:44:08.338 +03:00 [INF] Now listening on: http://localhost:5167
+2024-09-07 21:44:08.338 +03:00 [DBG] Loaded hosting startup assembly HRMS_BackEnd
+2024-09-07 21:44:08.338 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-09-07 21:44:08.338 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-09-07 21:44:08.338 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-09-07 21:44:08.472 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 21:44:08.472 +03:00 [INF] Hosting environment: Development
+2024-09-07 21:44:08.472 +03:00 [INF] Content root path: C:\Users\Issa Alshaban\Desktop\HRMS Project\BackEnd\HRMS_BackEnd\HRMS_BackEnd
+2024-09-07 21:44:08.472 +03:00 [DBG] Hosting started
+2024-09-07 21:44:08.805 +03:00 [DBG] Connection id "0HN6FDK7EA7BE" received FIN.
+2024-09-07 21:44:08.810 +03:00 [DBG] Connection id "0HN6FDK7EA7BE" accepted.
+2024-09-07 21:44:08.811 +03:00 [DBG] Connection id "0HN6FDK7EA7BE" started.
+2024-09-07 21:44:08.834 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-09-07 21:44:08.881 +03:00 [DBG] Connection id "0HN6FDK7EA7BE" stopped.
+2024-09-07 21:44:08.883 +03:00 [DBG] Connection id "0HN6FDK7EA7BE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-07 21:44:09.164 +03:00 [DBG] Connection id "0HN6FDK7EA7BF" accepted.
+2024-09-07 21:44:09.169 +03:00 [DBG] Connection id "0HN6FDK7EA7BF" received FIN.
+2024-09-07 21:44:09.179 +03:00 [DBG] Connection id "0HN6FDK7EA7BG" accepted.
+2024-09-07 21:44:09.182 +03:00 [DBG] Connection id "0HN6FDK7EA7BF" started.
+2024-09-07 21:44:09.183 +03:00 [DBG] Connection id "0HN6FDK7EA7BG" started.
+2024-09-07 21:44:09.259 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-09-07 21:44:09.337 +03:00 [DBG] Connection id "0HN6FDK7EA7BF" stopped.
+2024-09-07 21:44:09.339 +03:00 [DBG] Connection id "0HN6FDK7EA7BF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-07 21:44:09.356 +03:00 [DBG] Connection 0HN6FDK7EA7BG established using the following protocol: "Tls12"
+2024-09-07 21:44:09.480 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/index.html - null null
+2024-09-07 21:44:09.642 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-09-07 21:44:09.681 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-09-07 21:44:09.682 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:44:09.817 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-09-07 21:44:09.819 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-09-07 21:44:09.871 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-09-07 21:44:09.872 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-09-07 21:44:09.875 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/index.html - 200 null text/html;charset=utf-8 404.4876ms
+2024-09-07 21:44:09.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/swagger-ui.css - null null
+2024-09-07 21:44:09.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 21:44:09.924 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/_vs/browserLink - null null
+2024-09-07 21:44:09.924 +03:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2024-09-07 21:44:09.925 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:44:09.950 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 25.7511ms
+2024-09-07 21:44:09.956 +03:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2024-09-07 21:44:09.962 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-09-07 21:44:09.963 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/swagger-ui.css - 499 143943 text/css 38.5561ms
+2024-09-07 21:44:10.200 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/_vs/browserLink - 200 null text/javascript; charset=UTF-8 275.6856ms
+2024-09-07 21:44:10.231 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/favicon-16x16.png - null null
+2024-09-07 21:44:10.231 +03:00 [DBG] No candidates found for the request path '/swagger/favicon-16x16.png'
+2024-09-07 21:44:10.231 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:44:10.235 +03:00 [DBG] The file transmission was cancelled
+System.OperationCanceledException: The operation was canceled.
+   at System.Threading.CancellationToken.ThrowOperationCanceledException()
+   at System.Threading.CancellationToken.ThrowIfCancellationRequested()
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.SendFileResponseExtensions.SendFileAsyncCore(HttpResponse response, IFileInfo file, Int64 offset, Nullable`1 count, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileContext.SendAsync()
+2024-09-07 21:44:10.236 +03:00 [INF] Sending file. Request path: '/favicon-16x16.png'. Physical path: 'N/A'
+2024-09-07 21:44:10.237 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/favicon-16x16.png - 499 665 image/png 5.7042ms
+2024-09-07 21:44:10.285 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/v1/swagger.json - null null
+2024-09-07 21:44:10.285 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-09-07 21:44:10.285 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:44:10.513 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 228.2693ms
+2024-09-07 21:45:25.379 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-07 21:45:25.669 +03:00 [DBG] Hosting starting
+2024-09-07 21:45:25.709 +03:00 [INF] User profile is available. Using 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 21:45:25.716 +03:00 [DBG] Reading data from file 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys\key-609a1826-83c1-42ad-8d25-65a03b3f0c22.xml'.
+2024-09-07 21:45:25.722 +03:00 [DBG] Reading data from file 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys\key-c3a606a7-4f38-40da-8a01-cd847a3cac44.xml'.
+2024-09-07 21:45:25.726 +03:00 [DBG] Found key {609a1826-83c1-42ad-8d25-65a03b3f0c22}.
+2024-09-07 21:45:25.729 +03:00 [DBG] Found key {c3a606a7-4f38-40da-8a01-cd847a3cac44}.
+2024-09-07 21:45:25.735 +03:00 [DBG] Considering key {c3a606a7-4f38-40da-8a01-cd847a3cac44} with expiration date 2024-11-30 18:49:16Z as default key.
+2024-09-07 21:45:25.738 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-07 21:45:25.741 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-09-07 21:45:25.742 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-07 21:45:25.745 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-09-07 21:45:25.749 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-09-07 21:45:25.751 +03:00 [DBG] Using key {c3a606a7-4f38-40da-8a01-cd847a3cac44} as the default key.
+2024-09-07 21:45:25.752 +03:00 [DBG] Key ring with default key {c3a606a7-4f38-40da-8a01-cd847a3cac44} was loaded during application startup.
+2024-09-07 21:45:25.980 +03:00 [INF] Now listening on: https://localhost:7261
+2024-09-07 21:45:25.980 +03:00 [INF] Now listening on: http://localhost:5167
+2024-09-07 21:45:25.980 +03:00 [DBG] Loaded hosting startup assembly HRMS_BackEnd
+2024-09-07 21:45:25.980 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-09-07 21:45:25.980 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-09-07 21:45:25.980 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-09-07 21:45:26.083 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 21:45:26.084 +03:00 [INF] Hosting environment: Development
+2024-09-07 21:45:26.084 +03:00 [INF] Content root path: C:\Users\Issa Alshaban\Desktop\HRMS Project\BackEnd\HRMS_BackEnd\HRMS_BackEnd
+2024-09-07 21:45:26.084 +03:00 [DBG] Hosting started
+2024-09-07 21:45:26.137 +03:00 [DBG] Connection id "0HN6FDKUFQ0LH" accepted.
+2024-09-07 21:45:26.137 +03:00 [DBG] Connection id "0HN6FDKUFQ0LG" accepted.
+2024-09-07 21:45:26.138 +03:00 [DBG] Connection id "0HN6FDKUFQ0LH" started.
+2024-09-07 21:45:26.138 +03:00 [DBG] Connection id "0HN6FDKUFQ0LG" started.
+2024-09-07 21:45:26.164 +03:00 [DBG] Connection id "0HN6FDKUFQ0LH" received FIN.
+2024-09-07 21:45:26.164 +03:00 [DBG] Connection id "0HN6FDKUFQ0LG" received FIN.
+2024-09-07 21:45:26.172 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-09-07 21:45:26.172 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-09-07 21:45:26.223 +03:00 [DBG] Connection id "0HN6FDKUFQ0LH" stopped.
+2024-09-07 21:45:26.223 +03:00 [DBG] Connection id "0HN6FDKUFQ0LG" stopped.
+2024-09-07 21:45:26.227 +03:00 [DBG] Connection id "0HN6FDKUFQ0LG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-07 21:45:26.227 +03:00 [DBG] Connection id "0HN6FDKUFQ0LH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-07 21:45:26.490 +03:00 [DBG] Connection id "0HN6FDKUFQ0LI" accepted.
+2024-09-07 21:45:26.491 +03:00 [DBG] Connection id "0HN6FDKUFQ0LI" started.
+2024-09-07 21:45:26.572 +03:00 [DBG] Connection 0HN6FDKUFQ0LI established using the following protocol: "Tls12"
+2024-09-07 21:45:26.725 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/index.html - null null
+2024-09-07 21:45:26.912 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-09-07 21:45:26.940 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-09-07 21:45:26.941 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:45:27.051 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-09-07 21:45:27.053 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-09-07 21:45:27.091 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-09-07 21:45:27.092 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-09-07 21:45:27.098 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/index.html - 200 null text/html;charset=utf-8 383.8694ms
+2024-09-07 21:45:27.152 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/_vs/browserLink - null null
+2024-09-07 21:45:27.154 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 21:45:27.168 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 12.9651ms
+2024-09-07 21:45:27.234 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/_vs/browserLink - 200 null text/javascript; charset=UTF-8 81.9277ms
+2024-09-07 21:45:27.340 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/v1/swagger.json - null null
+2024-09-07 21:45:27.340 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-09-07 21:45:27.340 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:45:27.638 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 298.4095ms
+2024-09-07 21:46:24.434 +03:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.Versioning.ApiVersionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-09-07 21:46:24.710 +03:00 [DBG] Hosting starting
+2024-09-07 21:46:25.015 +03:00 [INF] User profile is available. Using 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-09-07 21:46:25.027 +03:00 [DBG] Reading data from file 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys\key-609a1826-83c1-42ad-8d25-65a03b3f0c22.xml'.
+2024-09-07 21:46:25.036 +03:00 [DBG] Reading data from file 'C:\Users\Issa Alshaban\AppData\Local\ASP.NET\DataProtection-Keys\key-c3a606a7-4f38-40da-8a01-cd847a3cac44.xml'.
+2024-09-07 21:46:25.055 +03:00 [DBG] Found key {609a1826-83c1-42ad-8d25-65a03b3f0c22}.
+2024-09-07 21:46:25.063 +03:00 [DBG] Found key {c3a606a7-4f38-40da-8a01-cd847a3cac44}.
+2024-09-07 21:46:25.076 +03:00 [DBG] Considering key {c3a606a7-4f38-40da-8a01-cd847a3cac44} with expiration date 2024-11-30 18:49:16Z as default key.
+2024-09-07 21:46:25.082 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-07 21:46:25.088 +03:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-09-07 21:46:25.091 +03:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-09-07 21:46:25.096 +03:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-09-07 21:46:25.102 +03:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-09-07 21:46:25.108 +03:00 [DBG] Using key {c3a606a7-4f38-40da-8a01-cd847a3cac44} as the default key.
+2024-09-07 21:46:25.109 +03:00 [DBG] Key ring with default key {c3a606a7-4f38-40da-8a01-cd847a3cac44} was loaded during application startup.
+2024-09-07 21:46:25.534 +03:00 [INF] Now listening on: https://localhost:7261
+2024-09-07 21:46:25.534 +03:00 [INF] Now listening on: http://localhost:5167
+2024-09-07 21:46:25.534 +03:00 [DBG] Loaded hosting startup assembly HRMS_BackEnd
+2024-09-07 21:46:25.534 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-09-07 21:46:25.534 +03:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-09-07 21:46:25.535 +03:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-09-07 21:46:25.713 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-09-07 21:46:25.713 +03:00 [INF] Hosting environment: Development
+2024-09-07 21:46:25.713 +03:00 [INF] Content root path: C:\Users\Issa Alshaban\Desktop\HRMS Project\BackEnd\HRMS_BackEnd\HRMS_BackEnd
+2024-09-07 21:46:25.713 +03:00 [DBG] Hosting started
+2024-09-07 21:46:25.753 +03:00 [DBG] Connection id "0HN6FDLG8BHRA" received FIN.
+2024-09-07 21:46:25.761 +03:00 [DBG] Connection id "0HN6FDLG8BHRA" accepted.
+2024-09-07 21:46:25.762 +03:00 [DBG] Connection id "0HN6FDLG8BHRA" started.
+2024-09-07 21:46:25.798 +03:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-09-07 21:46:25.863 +03:00 [DBG] Connection id "0HN6FDLG8BHRA" stopped.
+2024-09-07 21:46:25.866 +03:00 [DBG] Connection id "0HN6FDLG8BHRA" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-09-07 21:46:26.129 +03:00 [DBG] Connection id "0HN6FDLG8BHRB" accepted.
+2024-09-07 21:46:26.130 +03:00 [DBG] Connection id "0HN6FDLG8BHRB" started.
+2024-09-07 21:46:26.308 +03:00 [DBG] Connection 0HN6FDLG8BHRB established using the following protocol: "Tls12"
+2024-09-07 21:46:26.420 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/index.html - null null
+2024-09-07 21:46:26.593 +03:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-09-07 21:46:26.653 +03:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-09-07 21:46:26.654 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:46:26.786 +03:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-09-07 21:46:26.788 +03:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-09-07 21:46:26.847 +03:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-09-07 21:46:26.848 +03:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-09-07 21:46:26.872 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/index.html - 200 null text/html;charset=utf-8 449.8997ms
+2024-09-07 21:46:26.894 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/_vs/browserLink - null null
+2024-09-07 21:46:26.903 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/_framework/aspnetcore-browser-refresh.js - null null
+2024-09-07 21:46:26.947 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/_framework/aspnetcore-browser-refresh.js - 200 13760 application/javascript; charset=utf-8 44.2553ms
+2024-09-07 21:46:27.124 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/_vs/browserLink - 200 null text/javascript; charset=UTF-8 230.8297ms
+2024-09-07 21:46:27.293 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7261/swagger/v1/swagger.json - null null
+2024-09-07 21:46:27.293 +03:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-09-07 21:46:27.293 +03:00 [DBG] Request did not match any endpoints
+2024-09-07 21:46:27.576 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7261/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 283.1029ms
+2024-09-07 21:47:36.905 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7261/api/v1.0/Authenticate - application/json 231
+2024-09-07 21:47:36.911 +03:00 [DBG] 1 candidate(s) found for the request path '/api/v1.0/Authenticate'
+2024-09-07 21:47:36.920 +03:00 [DBG] Endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)' with route pattern 'api/v{version:apiVersion}/Authenticate' is valid for the request path '/api/v1.0/Authenticate'
+2024-09-07 21:47:36.924 +03:00 [DBG] Request matched endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)'
+2024-09-07 21:47:36.926 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-09-07 21:47:37.012 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-09-07 21:47:37.016 +03:00 [INF] Executing endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)'
+2024-09-07 21:47:37.069 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO) on controller HRMS_BackEnd.Controllers.AuthenticateController (HRMS_BackEnd).
+2024-09-07 21:47:37.070 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-09-07 21:47:37.070 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-09-07 21:47:37.070 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-07 21:47:37.071 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-09-07 21:47:37.071 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-07 21:47:37.072 +03:00 [DBG] Executing controller factory for controller HRMS_BackEnd.Controllers.AuthenticateController (HRMS_BackEnd)
+2024-09-07 21:47:37.227 +03:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-09-07 21:47:37.284 +03:00 [DBG] Executed controller factory for controller HRMS_BackEnd.Controllers.AuthenticateController (HRMS_BackEnd)
+2024-09-07 21:47:37.299 +03:00 [DBG] Attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO' ...
+2024-09-07 21:47:37.303 +03:00 [DBG] Attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO' using the name '' in request data ...
+2024-09-07 21:47:37.305 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-09-07 21:47:37.317 +03:00 [DBG] Connection id "0HN6FDLG8BHRB", Request id "0HN6FDLG8BHRB:00000017": started reading request body.
+2024-09-07 21:47:37.317 +03:00 [DBG] Connection id "0HN6FDLG8BHRB", Request id "0HN6FDLG8BHRB:00000017": done reading request body.
+2024-09-07 21:47:37.335 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'
+2024-09-07 21:47:37.335 +03:00 [DBG] Done attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'.
+2024-09-07 21:47:37.335 +03:00 [DBG] Done attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'.
+2024-09-07 21:47:37.335 +03:00 [DBG] Attempting to validate the bound parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO' ...
+2024-09-07 21:47:37.360 +03:00 [DBG] Done attempting to validate the bound parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'.
+2024-09-07 21:47:37.798 +03:00 [DBG] No relationship from 'Role' to 'RolesChangeRequest' has been configured by convention because there are multiple properties on one entity type - {'RolesChangeRequestNewRoles', 'RolesChangeRequestOldRoles'} that could be matched with the properties on the other entity type - {'NewRole', 'OldRole'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-09-07 21:47:37.809 +03:00 [DBG] No relationship from 'RolesChangeRequest' to 'Role' has been configured by convention because there are multiple properties on one entity type - {'NewRole', 'OldRole'} that could be matched with the properties on the other entity type - {'RolesChangeRequestNewRoles', 'RolesChangeRequestOldRoles'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-09-07 21:47:38.012 +03:00 [DBG] No relationship from 'RolesChangeRequest' to 'Role' has been configured by convention because there are multiple properties on one entity type - {'NewRole', 'OldRole'} that could be matched with the properties on the other entity type - {'RolesChangeRequestNewRoles', 'RolesChangeRequestOldRoles'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-09-07 21:47:38.013 +03:00 [DBG] No relationship from 'Role' to 'RolesChangeRequest' has been configured by convention because there are multiple properties on one entity type - {'RolesChangeRequestNewRoles', 'RolesChangeRequestOldRoles'} that could be matched with the properties on the other entity type - {'NewRole', 'OldRole'}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-09-07 21:47:38.417 +03:00 [DBG] Entity Framework Core 8.0.8 initialized 'HrmsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-09-07 21:47:38.473 +03:00 [DBG] 'HrmsDbContext' generated a temporary value for the property 'Employee.EmployeeId'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:47:38.569 +03:00 [DBG] Context 'HrmsDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:47:38.572 +03:00 [DBG] 
+
+
+
+
+
+
+Issue here with Save Changes
+
+
+
+
+
+2024-09-07 21:47:38.575 +03:00 [DBG] SaveChanges starting for 'HrmsDbContext'.
+2024-09-07 21:47:38.578 +03:00 [DBG] DetectChanges starting for 'HrmsDbContext'.
+2024-09-07 21:47:38.596 +03:00 [DBG] DetectChanges completed for 'HrmsDbContext'.
+2024-09-07 21:47:38.713 +03:00 [DBG] Creating DbConnection.
+2024-09-07 21:47:38.750 +03:00 [DBG] Created DbConnection. (34ms).
+2024-09-07 21:47:38.753 +03:00 [DBG] Opening connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.019 +03:00 [DBG] Opened connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.028 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-07 21:47:39.036 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2024-09-07 21:47:39.045 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (17ms).
+2024-09-07 21:47:39.057 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 100), @p2='?' (Size = 50), @p3='?' (DbType = Date), @p4='?' (Size = 50), @p5='?' (Size = 20), @p6='?' (Size = 50), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([DepartmentID], [Email], [FirstName], [HireDate], [LastName], [Phone], [Position], [RoleID])
+OUTPUT INSERTED.[EmployeeID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-09-07 21:47:39.131 +03:00 [INF] Executed DbCommand (70ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 100), @p2='?' (Size = 50), @p3='?' (DbType = Date), @p4='?' (Size = 50), @p5='?' (Size = 20), @p6='?' (Size = 50), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([DepartmentID], [Email], [FirstName], [HireDate], [LastName], [Phone], [Position], [RoleID])
+OUTPUT INSERTED.[EmployeeID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-09-07 21:47:39.154 +03:00 [DBG] The foreign key property 'Employee.EmployeeId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2024-09-07 21:47:39.168 +03:00 [DBG] Closing data reader to 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.176 +03:00 [DBG] A data reader for 'HRMS_DB' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 39ms reading results.
+2024-09-07 21:47:39.180 +03:00 [DBG] Closing connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.186 +03:00 [DBG] Closed connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB' (6ms).
+2024-09-07 21:47:39.201 +03:00 [DBG] An entity of type 'Employee' tracked by 'HrmsDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:47:39.203 +03:00 [DBG] SaveChanges completed for 'HrmsDbContext' with 1 entities written to the database.
+2024-09-07 21:47:39.281 +03:00 [DBG] Compiling query expression: 
+'DbSet<Employee>()
+    .Where(l => l.Email == __email_0)
+    .Select(l => l.EmployeeId)
+    .FirstOrDefault()'
+2024-09-07 21:47:39.497 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<int>(
+    asyncEnumerable: new SingleQueryingEnumerable<int>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> 0
+            SELECT TOP(1) e.EmployeeID
+            FROM Employees AS e
+            WHERE e.Email == @__email_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, int>, 
+        HRMS_BackEnd.Database.Context.HrmsDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-09-07 21:47:39.532 +03:00 [DBG] Opening connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.533 +03:00 [DBG] Opened connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.533 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-07 21:47:39.533 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:47:39.533 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:47:39.533 +03:00 [DBG] Executing DbCommand [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeID]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__email_0
+2024-09-07 21:47:39.540 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[EmployeeID]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__email_0
+2024-09-07 21:47:39.547 +03:00 [DBG] Closing data reader to 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.547 +03:00 [DBG] A data reader for 'HRMS_DB' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 7ms reading results.
+2024-09-07 21:47:39.548 +03:00 [DBG] Closing connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.548 +03:00 [DBG] Closed connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-09-07 21:47:39.811 +03:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserRole<string>' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-09-07 21:47:39.811 +03:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-09-07 21:47:39.879 +03:00 [DBG] Entity Framework Core 8.0.8 initialized 'HrmsAuthDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-09-07 21:47:39.881 +03:00 [DBG] Compiling query expression: 
+'DbSet<IdentityUser>()
+    .FirstOrDefault(u => u.NormalizedUserName == __normalizedUserName_0)'
+2024-09-07 21:47:39.921 +03:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<IdentityUser>(
+    asyncEnumerable: new SingleQueryingEnumerable<IdentityUser>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.QueryExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: IdentityUser.Id (string) Required PK AfterSave:Throw, 0], [Property: IdentityUser.AccessFailedCount (int) Required, 1], [Property: IdentityUser.ConcurrencyStamp (string) Concurrency, 2], [Property: IdentityUser.Email (string) MaxLength(256), 3], [Property: IdentityUser.EmailConfirmed (bool) Required, 4], [Property: IdentityUser.LockoutEnabled (bool) Required, 5], [Property: IdentityUser.LockoutEnd (DateTimeOffset?), 6], [Property: IdentityUser.NormalizedEmail (string) Index MaxLength(256), 7], [Property: IdentityUser.NormalizedUserName (string) Index MaxLength(256), 8], [Property: IdentityUser.PasswordHash (string), 9], [Property: IdentityUser.PhoneNumber (string), 10], [Property: IdentityUser.PhoneNumberConfirmed (bool) Required, 11], [Property: IdentityUser.SecurityStamp (string), 12], [Property: IdentityUser.TwoFactorEnabled (bool) Required, 13], [Property: IdentityUser.UserName (string) MaxLength(256), 14] }
+            SELECT TOP(1) a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.Email, a.EmailConfirmed, a.LockoutEnabled, a.LockoutEnd, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+            FROM AspNetUsers AS a
+            WHERE a.NormalizedUserName == @__normalizedUserName_0), 
+        null, 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, IdentityUser>, 
+        HRMS_BackEnd.Database.Context.HrmsAuthDbContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2024-09-07 21:47:39.931 +03:00 [DBG] Creating DbConnection.
+2024-09-07 21:47:39.931 +03:00 [DBG] Created DbConnection. (0ms).
+2024-09-07 21:47:39.931 +03:00 [DBG] Opening connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.940 +03:00 [DBG] Opened connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.940 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-07 21:47:39.942 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2024-09-07 21:47:39.942 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-09-07 21:47:39.942 +03:00 [DBG] Executing DbCommand [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-09-07 21:47:39.944 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2024-09-07 21:47:39.951 +03:00 [DBG] Closing data reader to 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.951 +03:00 [DBG] A data reader for 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 3ms reading results.
+2024-09-07 21:47:39.952 +03:00 [DBG] Closing connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:39.952 +03:00 [DBG] Closed connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-09-07 21:47:40.029 +03:00 [DBG] Context 'HrmsAuthDbContext' started tracking 'IdentityUser' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:47:40.029 +03:00 [DBG] SaveChanges starting for 'HrmsAuthDbContext'.
+2024-09-07 21:47:40.029 +03:00 [DBG] DetectChanges starting for 'HrmsAuthDbContext'.
+2024-09-07 21:47:40.044 +03:00 [DBG] DetectChanges completed for 'HrmsAuthDbContext'.
+2024-09-07 21:47:40.057 +03:00 [DBG] Opening connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:40.057 +03:00 [DBG] Opened connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:40.057 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-07 21:47:40.057 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:47:40.058 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:47:40.058 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-09-07 21:47:40.060 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);
+2024-09-07 21:47:40.060 +03:00 [DBG] Closing data reader to 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:40.060 +03:00 [DBG] A data reader for 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 0ms reading results.
+2024-09-07 21:47:40.060 +03:00 [DBG] Closing connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:40.060 +03:00 [DBG] Closed connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-09-07 21:47:40.062 +03:00 [DBG] An entity of type 'IdentityUser' tracked by 'HrmsAuthDbContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:47:40.062 +03:00 [DBG] SaveChanges completed for 'HrmsAuthDbContext' with 1 entities written to the database.
+2024-09-07 21:47:40.070 +03:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-09-07 21:47:40.072 +03:00 [DBG] No information found on request to perform content negotiation.
+2024-09-07 21:47:40.072 +03:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-09-07 21:47:40.072 +03:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-09-07 21:47:40.073 +03:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter' and content type 'text/plain' to write the response.
+2024-09-07 21:47:40.073 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-09-07 21:47:40.081 +03:00 [INF] Executed action HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd) in 3005.4416ms
+2024-09-07 21:47:40.081 +03:00 [INF] Executed endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)'
+2024-09-07 21:47:40.085 +03:00 [DBG] 'HrmsDbContext' disposed.
+2024-09-07 21:47:40.093 +03:00 [DBG] Disposing connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:40.094 +03:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-09-07 21:47:40.096 +03:00 [DBG] 'HrmsAuthDbContext' disposed.
+2024-09-07 21:47:40.096 +03:00 [DBG] Disposing connection to database 'Credentials_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:47:40.097 +03:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-09-07 21:47:40.097 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7261/api/v1.0/Authenticate - 200 null text/plain; charset=utf-8 3192.8193ms
+2024-09-07 21:48:47.077 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7261/api/v1.0/Authenticate - application/json 231
+2024-09-07 21:48:47.079 +03:00 [DBG] 1 candidate(s) found for the request path '/api/v1.0/Authenticate'
+2024-09-07 21:48:47.079 +03:00 [DBG] Endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)' with route pattern 'api/v{version:apiVersion}/Authenticate' is valid for the request path '/api/v1.0/Authenticate'
+2024-09-07 21:48:47.079 +03:00 [DBG] Request matched endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)'
+2024-09-07 21:48:47.079 +03:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-09-07 21:48:47.081 +03:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-09-07 21:48:47.081 +03:00 [INF] Executing endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)'
+2024-09-07 21:48:47.081 +03:00 [INF] Route matched with {action = "RegisterUser", controller = "Authenticate"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO) on controller HRMS_BackEnd.Controllers.AuthenticateController (HRMS_BackEnd).
+2024-09-07 21:48:47.081 +03:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-09-07 21:48:47.081 +03:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-09-07 21:48:47.081 +03:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-09-07 21:48:47.081 +03:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-09-07 21:48:47.081 +03:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-09-07 21:48:47.081 +03:00 [DBG] Executing controller factory for controller HRMS_BackEnd.Controllers.AuthenticateController (HRMS_BackEnd)
+2024-09-07 21:48:47.089 +03:00 [DBG] Executed controller factory for controller HRMS_BackEnd.Controllers.AuthenticateController (HRMS_BackEnd)
+2024-09-07 21:48:47.090 +03:00 [DBG] Attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO' ...
+2024-09-07 21:48:47.091 +03:00 [DBG] Attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO' using the name '' in request data ...
+2024-09-07 21:48:47.091 +03:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-09-07 21:48:47.091 +03:00 [DBG] Connection id "0HN6FDLG8BHRB", Request id "0HN6FDLG8BHRB:00000019": started reading request body.
+2024-09-07 21:48:47.091 +03:00 [DBG] Connection id "0HN6FDLG8BHRB", Request id "0HN6FDLG8BHRB:00000019": done reading request body.
+2024-09-07 21:48:47.092 +03:00 [DBG] JSON input formatter succeeded, deserializing to type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'
+2024-09-07 21:48:47.092 +03:00 [DBG] Done attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'.
+2024-09-07 21:48:47.092 +03:00 [DBG] Done attempting to bind parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'.
+2024-09-07 21:48:47.092 +03:00 [DBG] Attempting to validate the bound parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO' ...
+2024-09-07 21:48:47.094 +03:00 [DBG] Done attempting to validate the bound parameter 'authDTO' of type 'HRMS_BackEnd.Database.DTOs.AuthDTOs.RegisterDTO'.
+2024-09-07 21:48:47.112 +03:00 [DBG] Entity Framework Core 8.0.8 initialized 'HrmsDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.8' with options: None
+2024-09-07 21:48:47.114 +03:00 [DBG] 'HrmsDbContext' generated a temporary value for the property 'Employee.EmployeeId'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:48:47.115 +03:00 [DBG] Context 'HrmsDbContext' started tracking 'Employee' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-09-07 21:48:47.115 +03:00 [DBG] 
+
+
+
+
+
+
+Issue here with Save Changes
+
+
+
+
+
+2024-09-07 21:48:47.115 +03:00 [DBG] SaveChanges starting for 'HrmsDbContext'.
+2024-09-07 21:48:47.118 +03:00 [DBG] DetectChanges starting for 'HrmsDbContext'.
+2024-09-07 21:48:47.118 +03:00 [DBG] DetectChanges completed for 'HrmsDbContext'.
+2024-09-07 21:48:47.119 +03:00 [DBG] Creating DbConnection.
+2024-09-07 21:48:47.119 +03:00 [DBG] Created DbConnection. (0ms).
+2024-09-07 21:48:47.119 +03:00 [DBG] Opening connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:48:47.119 +03:00 [DBG] Opened connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:48:47.119 +03:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-09-07 21:48:47.119 +03:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:48:47.119 +03:00 [DBG] Initialized DbCommand for 'ExecuteReader' (0ms).
+2024-09-07 21:48:47.120 +03:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 100), @p2='?' (Size = 50), @p3='?' (DbType = Date), @p4='?' (Size = 50), @p5='?' (Size = 20), @p6='?' (Size = 50), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([DepartmentID], [Email], [FirstName], [HireDate], [LastName], [Phone], [Position], [RoleID])
+OUTPUT INSERTED.[EmployeeID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-09-07 21:48:47.122 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 100), @p2='?' (Size = 50), @p3='?' (DbType = Date), @p4='?' (Size = 50), @p5='?' (Size = 20), @p6='?' (Size = 50), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Employees] ([DepartmentID], [Email], [FirstName], [HireDate], [LastName], [Phone], [Position], [RoleID])
+OUTPUT INSERTED.[EmployeeID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+2024-09-07 21:48:47.132 +03:00 [DBG] Closing data reader to 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:48:47.133 +03:00 [DBG] A data reader for 'HRMS_DB' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 10ms reading results.
+2024-09-07 21:48:47.135 +03:00 [DBG] Closing connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:48:47.135 +03:00 [DBG] Closed connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB' (0ms).
+2024-09-07 21:48:47.150 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'HRMS_BackEnd.Database.Context.HrmsDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__Employee__A9D1053434A7E8B9'. Cannot insert duplicate key in object 'dbo.Employees'. The duplicate key value is (AmroShaban@hotmail.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6efdca0b-de7c-4db2-8e8c-15ef0dcf0d70
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Violation of UNIQUE KEY constraint 'UQ__Employee__A9D1053434A7E8B9'. Cannot insert duplicate key in object 'dbo.Employees'. The duplicate key value is (AmroShaban@hotmail.com).
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:6efdca0b-de7c-4db2-8e8c-15ef0dcf0d70
+Error Number:2627,State:1,Class:14
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2024-09-07 21:48:47.414 +03:00 [INF] Executed action HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd) in 332.8302ms
+2024-09-07 21:48:47.415 +03:00 [INF] Executed endpoint 'HRMS_BackEnd.Controllers.AuthenticateController.RegisterUser (HRMS_BackEnd)'
+2024-09-07 21:48:47.574 +03:00 [ERR] Test Exception MW: An error occurred while saving the entity changes. See the inner exception for details.
+2024-09-07 21:48:47.592 +03:00 [DBG] 'HrmsDbContext' disposed.
+2024-09-07 21:48:47.592 +03:00 [DBG] Disposing connection to database 'HRMS_DB' on server '(localdb)\MSSQLLocalDB'.
+2024-09-07 21:48:47.592 +03:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-09-07 21:48:47.592 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7261/api/v1.0/Authenticate - 500 null application/json; charset=utf-8 515.6758ms
