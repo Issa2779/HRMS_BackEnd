@@ -16,6 +16,11 @@ public partial class HrmsDbContext : DbContext
     {
     }
 
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlite("Data Source = HRM_System.db");
+    }
+
     public virtual DbSet<AttendanceRecord> AttendanceRecords { get; set; }
 
     public virtual DbSet<Benefit> Benefits { get; set; }

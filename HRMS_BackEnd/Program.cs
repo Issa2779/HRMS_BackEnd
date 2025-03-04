@@ -5,13 +5,10 @@ using HRMS_BackEnd.Repositories.Attendace_Repository;
 using HRMS_BackEnd.Repositories.EmployeeRepository;
 using HRMS_BackEnd.Repositories.PendingStatus_Repository;
 using HRMS_BackEnd.Repositories.RolePosition_Repository;
-using HRMS_BackEnd.Repositories.TokenRepository;
 using HRMS_BackEnd.Repositries.LeaveRepository;
 using HRMS_BackEnd.Repositries.LeaveRepositry;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Text;
 
@@ -50,49 +47,17 @@ namespace HRMS_BackEnd
 
             //Database HRMS Connection String and Initiation connection
             builder.Services.AddDbContext<HrmsDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("HRMS_DB_ConnectionString")));
+            options.UseSqlite(builder.Configuration
+            .GetConnectionString("HRM_System.db")));
 
-            builder.Services.AddDbContext<HrmsAuthDbContext>(options =>
-            options.UseSqlServer(builder.Configuration.GetConnectionString("Auth_Autho_DB_ConnectionString")));
+            
 
             //Added dependency injections
             builder.Services.AddScoped<IEmployeeRespository, SqlEmployeeRepository>();
             builder.Services.AddScoped<ILeaveRepository, SqlLeaveRepository>();
-            builder.Services.AddScoped<IJwtTokenRepo, TokenRepo>();
             builder.Services.AddScoped<IPendingRepository, SqlPendingStatusHandler>();
             builder.Services.AddScoped<IRoleRepository, SqlRoleRepository>();
             builder.Services.AddScoped<IAttendanceRepository, SqlAttendanceRepository>();
-
-
-            builder.Services.AddIdentityCore<IdentityUser>()
-                .AddRoles<IdentityRole>()
-                .AddTokenProvider<DataProtectorTokenProvider<IdentityUser>>("HRMS_Provider")
-                .AddEntityFrameworkStores<HrmsAuthDbContext>()
-                .AddDefaultTokenProviders();
-
-
-            builder.Services.Configure<IdentityOptions>(options =>
-            {
-                options.Password.RequireDigit = false;
-                options.Password.RequireNonAlphanumeric = false;
-                options.Password.RequireUppercase = false;
-                options.Password.RequireLowercase = false;
-                
-            });
-
-            //Authentication methods
-            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                .AddJwtBearer(options =>
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                    ValidAudience = builder.Configuration["Jwt:Audience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
-                });
 
 
             var app = builder.Build();
